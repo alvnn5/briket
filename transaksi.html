@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUAT PESANAN</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <center><h1>FORST ENERGI</h1></center>
+        <MARQUEE ><h3>"PEMBAYARAN KETIKA BARANG TIBA,SILAHKAN PESAN TERLEBIH DAHULU"*"PEMBAYARAN KETIKA BARANG TIBA,SILAHKAN PESAN TERLEBIH DAHULU"*"PEMBAYARAN KETIKA BARANG TIBA,SILAHKAN PESAN TERLEBIH DAHULU"*"PEMBAYARAN KETIKA BARANG TIBA,SILAHKAN PESAN TERLEBIH DAHULU"*"PEMBAYARAN KETIKA BARANG TIBA,SILAHKAN PESAN TERLEBIH DAHULU"*"PEMBAYARAN KETIKA BARANG TIBA,SILAHKAN PESAN TERLEBIH DAHULU"*"PEMBAYARAN KETIKA BARANG TIBA,SILAHKAN PESAN TERLEBIH DAHULU"*"PEMBAYARAN KETIKA BARANG TIBA,SILAHKAN PESAN TERLEBIH DAHULU"*"PEMBAYARAN KETIKA BARANG TIBA,SILAHKAN PESAN TERLEBIH DAHULU"*"PEMBAYARAN KETIKA BARANG TIBA,SILAHKAN PESAN TERLEBIH DAHULU"</h3></center></MARQUEE>
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">PRODUK</a></li>
+            <li><a href="transaksi.html">TRANSAKSI</a></li>
+            <li><a href="invoice.html">INVOICE</a></li>
+            <li><a href="kontak.html">KONTAK KAMI</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <main class="form-transaksi">
+            <hr>
+            <center><h2>Data Transaksi</h2></center>
+            <hr>
+            <form id="transaksiForm">
+                <label for="nama">Nama:</label><br>
+                <input type="text" id="nama" name="nama"><br><br>
+                <label for="alamat">Alamat:</label><br>
+                <textarea id="alamat" name="alamat"></textarea><br><br>
+                <label for="produk">Produk:</label><br>
+                <div>
+                    <input type="checkbox" id="blok" name="carcol" value="BLOK" data-price="50000">
+                    <label for="blok">BLOK</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="pipe" name="carcol" value="PIPE" data-price="70000">
+                    <label for="pipe">PIPE</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="hexagonal" name="carcol" value="HEXAGONAL" data-price="100000">
+                    <label for="hexagonal">HEXAGONAL</label>
+                </div>
+                <br>
+                <label for="jumlah">Jumlah:</label><br>
+                <input type="number" id="jumlah" name="jumlah" min="1" value="1"><br><br>
+                <button type="button" onclick="buatPesanan()">Pesan</button>
+                <button type="reset">Reset</button>
+            </form>
+        </main>
+        
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        <center>"THE POWER OF NATURE"</center>
+    </footer>
+</body>
+</html>
